@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Profile Page</title>
+		<style>
+			#page1 {
+				height:100vh;
+				width:100vw;
+				background-color:blue;
+			}
+			#banner1 {
+				height:62vh;
+				width:100vw;
+				background-color:purple;
+			}
+			#img1 {
+				height:62vh;
+				width:100vw;
+			}
+			#tag1 {
+				height:15vh;
+				width:50vw;
+				background-color:green;
+				position:absolute;
+				top:20vh;
+				right:25vw;
+			}
+			#profile1 {
+				height:30vh;
+				width:15vw;
+				position:absolute;
+				top:50vh;
+				right:47vw;
+				background-color:red;
+			}
+			#img2 {
+				height:25vh;
+				width:15vw;
+			}
+			#page2 {
+				height:100vh;
+				width:100vw;
+				background-color:red;
+			}
+			#banner2 {
+				height:38vh;
+				width:100vw;
+				background-color:purple;
+			}
+			.thumb1 {
+				width: 10vw;
+				height:25vh;
+				margin: 0% 5% 2% 4.5%;
+			}
+			.thumb2 {
+				width: 5vw;
+				height:5vh;
+				float:left;
+				margin: 1% 15% 0% 0%;
+				background-color:green;
+			}
+			#profile2 {
+				width:25vw;
+				height:55vh;
+				background-color:purple;
+				position:relative;
+				top:3vh;
+				left:4vw;
+				float:left;
+			}
+			#img3 {
+				height:55vh;
+				width:25vw;
+			}
+			#bio {
+				position:relative;
+				top:3vh;
+				left:20vw;
+			}
+			#biog {
+				position:relative;
+				top:3vh;
+				left:20vw;
+			}
+			#page3 {
+				height:100vh;
+				width:100vw;
+				background-color:yellow;
+			}
+			#img4 {
+				height:100vh;
+				width:100vw;
+			}
+			#tag2 {
+				height:15vh;
+				width:50vw;
+				background-color:green;
+				position:absolute;
+				top:260vh;
+				right:25vw;
+			}
+			
+			@media only screen and (max-width:480px){
+				#tag1 {
+					background-color:red;
+				}
+			}
+			@media only screen and (max-width:960px) and (min-width:480px){
+				#tag1 {
+					background-color:blue;
+				}
+			}
+			
+			@media only screen and (max-width:480px){
+				#profile1 {
+					background-color:blue;
+				}
+			}
+			@media only screen and (max-width:960px) and (min-width:480px){
+				#profile1 {
+					background-color:green;
+				}
+			}
+			
+			@media only screen and (max-width:480px){
+				#page1 {
+					background-color:green;
+				}
+			}
+			@media only screen and (max-width:960px) and (min-width:480px){
+				#page1 {
+					background-color:red;
+				}
+			}
+		</style>
+		<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/
+		bootstrap.min.css" integrity="sha384-
+		BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68v
+		bdEjh4u" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/b
+		ootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNI
+		cPD7Txa" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id='page1'>
+			<div id='banner1'>
+				<img id='img1' 
+				src='http://placekitten.com/1200/400' />
+				<div id='tag1'><h1>Cats live here</h1></div>
+			</div>
+			<div id='profile1'>
+				<img id='img2' 
+				src='http://placekitten.com/300/300' />
+				<h4 id='name1'>Cat's name</h4>
+			</div>
+		</div>
+		<div id='page2'>
+			<div id='banner2'>
+				<div id='cat1t' class='thumb2'><h4>cats</h4></div>
+				<div class='thumb2'><h4>cats</h4></div>
+				<div class='thumb2'><h4>cats</h4></div>
+				<div class='thumb2'><h4>cats</h4></div>
+				<div class='thumb2'><h4>cats</h4></div>
+				<img id='cat1' class='thumb1' 
+				src='http://placekitten.com/200/250' />
+				<img class='thumb1' 
+				src='http://placekitten.com/200/250' />
+				<img class='thumb1' 
+				src='http://placekitten.com/200/250' />
+				<img class='thumb1' 
+				src='http://placekitten.com/200/250' />
+				<img class='thumb1' 
+				src='http://placekitten.com/200/250' />
+			</div>
+			<div id='profile2'>
+				<img id='img3'  
+				src='http://placekitten.com/300/400' />
+			</div>
+			<h3 id='bio'>Biography</h3>
+				<p id='biog'>Biography written for someone to read<br/>
+							Biography written for someone to read<br/>
+							Don't click the cat<br/>
+							Biography written for someone to read<br/>
+							Biography written for someone to read<br/>
+							Biography written for someone to read<br/>
+				</p>
+		</div>
+		<div id='page3'>
+			<img id='img4' 
+			src='http://placekitten.com/1200/550' />
+			<div id='tag2'>
+				<h3 id='name4'>Cat's also live here (don't click the cat)</h3>
+			</div>
+		</div>
+	</body>
+	<script>
+		var ban1But = document.getElementById("banner1");
+		var tagy1 = document.getElementById("tag1");
+		var proBut = document.getElementById("name1");
+		var pro1But = document.getElementById("profile1");
+		var img3But = document.getElementById("img3");
+		var bioy = document.getElementById("bio");
+		var page3But = document.getElementById("page3");
+		var tagy2 = document.getElementById("tag2");
+		var cat1But = document.getElementById("cat1");
+		var cat1ty = document.getElementById("cat1t");
+		
+		ban1But.onclick = function(){
+			tagy1.innerHTML = "Cats live everywhere";
+		}
+		
+		pro1But.onclick = function(){
+			proBut.innerHTML = "My name is prince Pawsalot";
+		}
+		
+		img3But.onclick = function(){
+			bioy.innerHTML = "His life story";
+		}
+		
+		page3But.onclick = function(){
+			tagy2.innerHTML = "This cat looks very comfortable";
+		}
+		
+		cat1But.onclick = function(){
+			cat1ty.innerHTML = "cat";
+		}
+	</script>
+</html>
+	
